@@ -1,0 +1,13 @@
+Idea: The idea is to build a program which can be used to increase the security.
+
+I am building a Gate unlocking System.
+
+How will it work?
+1.The program will ask the user to enter his name and password.
+2.Assign password to each members with name.
+3.If name and passwords correct, gate will open otherwise it will remained locked.
+
+Concepts:
+dictionary-for storing name and passwords
+if/elif-for giving conditions
+

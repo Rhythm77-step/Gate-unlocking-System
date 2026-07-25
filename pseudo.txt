@@ -1,0 +1,29 @@
+FUNCTION lock_system():
+  COMMENT: creating a empty dictionary
+  create a empty dictionary
+  prompt user:Enter how many name you want to add 
+  COMMENT: Assigning name and passwords.
+  Assign name and password & store in data
+  COMMENT:asking the user to enter name and pass.
+  promt user:"Enter your name"
+  IF user name exists in data
+   prompt user: "Enter your password'
+   IF pass. matches with name THEN
+    print"---Gate Unlocked---"
+   ELSE IF if passwords not matches with name
+     print"Wrong Password"
+   ELSE IF
+    print"Invalid Name"
+
+
+
+   
+
+
+
+   
+
+
+
+
+  
