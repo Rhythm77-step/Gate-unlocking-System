@@ -3,6 +3,7 @@ def lock_system():
     user_data={ }
     num=int(input("Enter how many persons you want to add in system= "))
     for i in range(1,(num+1)):
+        i=1
         name=input(f"Enter name{i} = ")
         name_list=[]
         name_list.append(name)                                                      
@@ -11,16 +12,18 @@ def lock_system():
         pass_list.append(password)
         user_data[name]=password
         user_name=input("Enter your name= ")
-        if user_name in name_list:
-            user_pass=input("Enter your password= ")
-            if user_data[name]==password:
-                print("---Gate Unlocked---")
-            else:
-                print("Wrong Password")
-        else:
-            print("Invalid Name")
+        i+=1
+    if user_name in name_list:
+        user_pass=input("Enter your password= ")
+    else:
+        print("Invalid User name")
+    if user_data[user_name]]==user_pass:
+      print("---Gate Unlocked---")
+    else:
+        print("Wrong Password")
 lock_system()
             
+
 
 
 
