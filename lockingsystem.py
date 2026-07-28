@@ -7,9 +7,12 @@ def lock_system():
         name=input(f"Enter name{i} = ")                                                      
         password=(input(f"Enter {name} password= "))
         user_data[name]=password
-        user_name=input("Enter your name= ")
         i+=1
-    if user_name in 
+    name_list=list(user_data.keys())    
+    user_name=input("Enter your name= ")
+    if 
+
+    
         user_pass=input("Enter your password= ")
     else:
         print("Invalid User name")
@@ -18,6 +21,7 @@ def lock_system():
     else:
         print("Wrong Password")
 lock_system()
+
             
 
 
