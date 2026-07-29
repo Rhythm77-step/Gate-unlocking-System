@@ -8,22 +8,21 @@ def user_data():
         password=(input(f"Enter {name} password= "))
         data[name]=password
         i+=1
-"""        
-def lock_system():        
-    name_list=list(data.keys())    
-    user_name=input("Enter your name= ")
-    if 
 
-    
-        user_pass=input("Enter your password= ")
-    else:
-        print("Invalid User name")
-    if data[user_name]==user_pass:
-      print("---Gate Unlocked---")
-    else:
-        print("Wrong Password")
-lock_system()
-"""
+    def lock_system():
+        while True:
+            user_name=input("Enter your name= ")
+            if user_name in data:
+                pasw=input("Enter your password= ")
+                if data[user_name]==pasw:
+                    print("---GATE UNLOCKED---")
+                else:
+                    print("Wrong password")
+            else:
+                print("Invalid Name")
+    lock_system()
+user_data()
+
             
 
 
