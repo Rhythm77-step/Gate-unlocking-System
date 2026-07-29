@@ -10,7 +10,7 @@ def user_data():
 
     def lock_system():
         while True:
-            user_name=input("Enter your name= "
+            user_name=input("Enter your name= ")
             if user_name in data:
                 p=input("Enter your password= ")
                 if data[user_name]==p:
