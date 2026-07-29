@@ -3,7 +3,6 @@ def user_data():
     data={ }
     num=int(input("Enter how many persons you want to add in system= "))
     for i in range(1,(num+1)):
-        i=1 
         name=input(f"Enter name{i} = ")                                                      
         password=(input(f"Enter {name} password= "))
         data[name]=password
@@ -11,10 +10,10 @@ def user_data():
 
     def lock_system():
         while True:
-            user_name=input("Enter your name= ")
+            user_name=input("Enter your name= "
             if user_name in data:
-                pasw=input("Enter your password= ")
-                if data[user_name]==pasw:
+                p=input("Enter your password= ")
+                if data[user_name]==p:
                     print("---GATE UNLOCKED---")
                 else:
                     print("Wrong password")
