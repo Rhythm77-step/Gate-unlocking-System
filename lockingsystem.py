@@ -7,7 +7,7 @@ def user_data():
         password=(input(f"Enter {name} password= "))
         data[name]=password
         i+=1
-
+    #defining lock system
     def lock_system():
         while True:
             user_name=input("Enter your name= ")
@@ -16,7 +16,7 @@ def user_data():
                 if data[user_name]==p:
                     print("---GATE UNLOCKED---")
                 else:
-                    print("Wrong password")
+                    print("Wrong password,Enter correct.")
             else:
                 print("Invalid Name")
     lock_system()
