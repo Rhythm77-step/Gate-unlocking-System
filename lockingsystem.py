@@ -18,7 +18,7 @@ def user_data():
                 else:
                     print("Wrong password,Enter correct.")
             else:
-                print("Invalid Name")
+                print("Invalid Name,enter correct")
     lock_system()
 user_data()
 
